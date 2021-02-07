@@ -1,0 +1,19 @@
+{
+  "name": "platform-os",
+  "version": "1.0.0",
+  "description": "An application that will work on all platforms with controls in their native visual style.",
+  "main": "src/main/main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelDTF/platform-os.git"
+  },
+  "author": "Angel Bot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngelDTF/platform-os/issues"
+  },
+  "homepage": "https://github.com/AngelDTF/platform-os#readme"
+}
