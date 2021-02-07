@@ -29,7 +29,7 @@ Yup! Platform-os is built to automatically search for visual styles in the right
 ## So, how do I code my own visual style?
 There's currently no documentation on it. I'd recommend looking at the existing visual styles and trying to learn off of those. Note: you should have a basic understanding of CSS before trying to get into this.
 ## Well, I made a visual style. How do I test it?
-It's pretty much the same way you test it in the section "[Can I test the controls/styles?](https://github.com/AngelDTF/platform-os#can-i-test-the-controls-styles)"<br>
+It's pretty much the same way you test it in the section "[Can I test the controls/styles?](https://github.com/AngelDTF/platform-os#can-i-test-the-controlsstyles)"<br>
 Here's a quick rundown:
 - Make sure you have the recommended version of [NodeJS](https://nodejs.org)
 - Go to the root directory of the project
