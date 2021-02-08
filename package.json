@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AngelDTF/platform-os#readme",
   "devDependencies": {
     "electron": "^11.2.1"
+  },
+  "dependencies": {
+    "electron-frameless-window-plugin": "^1.0.4"
   }
 }

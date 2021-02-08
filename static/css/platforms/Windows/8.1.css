@@ -1,0 +1,70 @@
+html { --accent: #F2A854; }
+
+body[maximized="false"] { margin: 33px 10px 10px 10px; }
+body[maximized="true"] { margin: 23px 0 0 0; }
+
+platform-frame div#inner { background: white; position: absolute; outline: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameTop { z-index: -1; }
+platform-frame div#frameCenter { z-index: -2; }
+platform-frame div#frameBottom { z-index: -2; }
+platform-frame div#title { color: black; font-family: 'Segoe UI'; left: 0; right: 0; margin: 0 auto; text-align: center; width: max-content; }
+platform-frame div#minimize { background-image: url(../../../png/platforms/Windows/8.1/glyph_minimize_black.png); background-repeat: no-repeat; }
+platform-frame div#maximize { background-repeat: no-repeat; background-position: center; }
+platform-frame div#minimize:hover, platform-frame div#minimize:active { background-color: #3665B3; background-image: url(../../../png/platforms/Windows/8.1/glyph_minimize_white.png); }
+platform-frame div#minimize:active { background-color: #3D6099; }
+platform-frame div#maximize:hover { background-color: #3665B3; }
+platform-frame div#maximize:active { background-color: #3D6099; }
+platform-frame div#close { background-image: url(../../../png/platforms/Windows/8.1/glyph_close.png); background-repeat: no-repeat; background-position: center; }
+platform-frame div#minimize, platform-frame div#maximize, platform-frame div#close { transition: background 0.1s ease-in-out; }
+platform-frame div#minimize:active, platform-frame div#maximize:active, platform-frame div#close:active { transition: none; }
+platform-frame div#frameNW { flex: 0 0 auto; width: 9px; height: 32px; border-top: 1px solid rgba(0, 0, 0, 0.24); border-left: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameN { width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameNE { flex: 0 0 auto; width: 9px; height: 32px; border-top: 1px solid rgba(0, 0, 0, 0.24); border-right: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameW { flex: 0 0 auto; width: 9px; height: 100%; border-left: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameE { margin-left: auto; flex: 0 0 auto; width: 9px; height: 100%; border-right: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameSW { flex: 0 0 auto; width: 9px; height: 9px; border-bottom: 1px solid rgba(0, 0, 0, 0.24); border-left: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameS { width: 100%; border-bottom: 1px solid rgba(0, 0, 0, 0.24); }
+platform-frame div#frameSE { flex: 0 0 auto; width: 9px; height: 9px; border-bottom: 1px solid rgba(0, 0, 0, 0.24); border-right: 1px solid rgba(0, 0, 0, 0.24); }
+body[maximized="false"] platform-frame div#inner { top: 33px; right: 10px; bottom: 10px; left: 10px; }
+body[maximized="false"] platform-frame div#frameTop { height: 33px; }
+body[maximized="false"] platform-frame div#frameCenter { height: calc(100% - 43px); }
+body[maximized="false"] platform-frame div#frameBottom { height: 10px; }
+body[maximized="false"] platform-frame div#favicon { top: 7px; left: 10px; }
+body[maximized="false"] platform-frame div#title { top: 6px; }
+body[maximized="false"] platform-frame div#minimize { width: 25px; height: 20px; top: 1px; right: 81px; background-position: center 12px; }
+body[maximized="false"] platform-frame div#maximize { width: 25px; height: 20px; top: 1px; right: 55px; background-image: url(../../../png/platforms/Windows/8.1/glyph_maximize_black.png); }
+body[maximized="false"] platform-frame div#maximize:hover, body[maximized="false"] platform-frame div#maximize:active { background-image: url(../../../png/platforms/Windows/8.1/glyph_maximize_white.png); }
+body[maximized="false"] platform-frame div#close { width: 45px; height: 20px; top: 1px; right: 9px; }
+body[maximized="true"] platform-frame div#inner { top: 23px; right: 0; bottom: 0; left: 0; }
+body[maximized="true"] platform-frame div#frameTop { height: 23px; }
+body[maximized="true"] platform-frame div#frameCenter { display: none; }
+body[maximized="true"] platform-frame div#frameBottom { display: none; }
+body[maximized="true"] platform-frame div#frameNW { display: none; }
+body[maximized="true"] platform-frame div#frameN { border-top: none; }
+body[maximized="true"] platform-frame div#frameNE { display: none; }
+body[maximized="true"] platform-frame div#favicon { top: 3px; left: 2px; }
+body[maximized="true"] platform-frame div#title { top: 1px; }
+body[maximized="true"] platform-frame div#minimize { width: 26px; height: 19px; top: 0; right: 75px; background-position: center 11px; }
+body[maximized="true"] platform-frame div#maximize { width: 26px; height: 19px; top: 0; right: 49px; background-image: url(../../../png/platforms/Windows/8.1/glyph_restore_black.png); }
+body[maximized="true"] platform-frame div#maximize:hover, body[maximized="true"] platform-frame div#maximize:active { background-image: url(../../../png/platforms/Windows/8.1/glyph_restore_white.png); }
+body[maximized="true"] platform-frame div#close { width: 45px; height: 19px; top: 0; right: 3px; }
+body[focused="false"] platform-frame div#frameNW { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameN { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameNE { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameW { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameE { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameSW { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameS { background: #EBEBEB; }
+body[focused="false"] platform-frame div#frameSE { background: #EBEBEB; }
+body[focused="false"] platform-frame div#close { background-color: #BCBCBC; }
+body[focused="true"] platform-frame div#frameNW { background: var(--accent); }
+body[focused="true"] platform-frame div#frameN { background: var(--accent); }
+body[focused="true"] platform-frame div#frameNE { background: var(--accent); }
+body[focused="true"] platform-frame div#frameW { background: var(--accent); }
+body[focused="true"] platform-frame div#frameE { background: var(--accent); }
+body[focused="true"] platform-frame div#frameSW { background: var(--accent); }
+body[focused="true"] platform-frame div#frameS { background: var(--accent); }
+body[focused="true"] platform-frame div#frameSE { background: var(--accent); }
+body[focused="true"] platform-frame div#close { background-color: #C75050; }
+body[focused="false"] platform-frame div#close:hover, body[focused="true"] platform-frame div#close:hover { background-color: #E04343; }
+body[focused="false"] platform-frame div#close:active, body[focused="true"] platform-frame div#close:active { background-color: #993D3D; }
