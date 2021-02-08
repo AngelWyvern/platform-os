@@ -21,7 +21,19 @@ minimize.addEventListener('click', () => remote.getCurrentWindow().minimize());
 minimize.id = 'minimize';
 
 const maximize = document.createElement('div');
-maximize.addEventListener('click', () => { if (remote.getCurrentWindow().isMaximized()) remote.getCurrentWindow().unmaximize(); else remote.getCurrentWindow().maximize(); });
+maximize.addEventListener('click', () =>
+{
+    if (remote.getCurrentWindow().isMaximized())
+    {
+        remote.getCurrentWindow().unmaximize();
+        document.body.setAttribute('maximized', 'false');
+    }
+    else
+    {
+        remote.getCurrentWindow().maximize();
+        document.body.setAttribute('maximized', 'true');
+    }
+});
 maximize.id = 'maximize';
 
 const close = document.createElement('div');
