@@ -5,6 +5,7 @@ platform-frame { position: absolute; top: 0; right: 0; bottom: 0; left: 0; overf
 platform-frame div#frameTop, platform-frame div#frameCenter, platform-frame div#frameBottom { display: flex; flex-direction: row; }
 platform-frame div#frameDragRegion { margin-top: 6px; height: calc(100% - 6px); -webkit-app-region: drag; }
 platform-frame div#favicon { width: 16px; height: 16px; background: url(../png/favicon.png); position: absolute; }
+platform-frame div#title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 platform-frame div#title, platform-frame div#minimize, platform-frame div#maximize, platform-frame div#close { position: absolute; -webkit-app-region: no-drag; }
 
 body[maximized="true"] platform-frame div#frameDragRegion { margin-top: 0; height: calc(100%); }

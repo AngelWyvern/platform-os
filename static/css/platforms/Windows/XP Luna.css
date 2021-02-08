@@ -1,0 +1,90 @@
+platform-frame
+{
+	--button1-hover: linear-gradient(135deg, rgba(114,161,255,1), rgba(151,185,255,1), rgba(164,194,255,1), rgba(143,180,255,1), rgba(120,165,255,1), rgba(107,156,255,1), rgba(95,149,255,1), rgba(84,143,255,1), rgba(79,144,255,1), rgba(74,149,255,1), rgba(71,158,255,1), rgba(66,169,255,1), rgba(62,177,255,1), rgba(53,178,255,1), rgba(42,173,255,1), rgba(29,158,255,1), rgba(17,132,250,1), rgba(10,93,221,1), rgba(38,94,195,1));
+	--button1-pressed: linear-gradient(135deg, rgba(31,59,95,1), rgba(0,42,98,1), rgba(0,56,130,1), rgba(0,61,146,1), rgba(0,64,156,1), rgba(0,68,165,1), rgba(0,71,172,1), rgba(0,73,174,1), rgba(0,76,177,1), rgba(0,80,181,1), rgba(0,85,186,1), rgba(0,90,191,1), rgba(0,94,195,1), rgba(0,96,197,1), rgba(0,98,198,1), rgba(0,96,196,1), rgba(0,91,192,1), rgba(0,84,185,1), rgba(31,102,191,1));
+	--button2-hover: linear-gradient(135deg, rgba(255,146,133,1), rgba(255,174,165,1), rgba(255,179,171,1), rgba(255,170,160,1), rgba(255,160,149,1), rgba(255,153,142,1), rgba(255,146,133,1), rgba(255,140,126,1), rgba(255,133,119,1), rgba(255,127,112,1), rgba(255,121,106,1), rgba(255,115,99,1), rgba(255,110,93,1), rgba(255,104,87,1), rgba(255,98,80,1), rgba(255,92,73,1), rgba(251,84,65,1), rgba(237,74,55,1), rgba(210,83,68,1));
+	--button2-pressed: linear-gradient(135deg, rgba(100,53,41,1), rgba(105,34,15,1), rgba(121,39,17,1), rgba(128,40,18,1), rgba(133,42,19,1), rgba(140,44,20,1), rgba(144,45,21,1), rgba(149,47,21,1), rgba(155,48,22,1), rgba(158,50,23,1), rgba(161,50,23,1), rgba(165,52,24,1), rgba(169,54,24,1), rgba(170,54,24,1), rgba(172,54,25,1), rgba(173,55,25,1), rgba(173,55,25,1), rgba(174,55,25,1), rgba(179,78,53,1));
+}
+
+body[focused="false"] platform-frame
+{
+	--frame-top: linear-gradient(180deg, rgba(104,141,224,1), rgba(152,178,232,1), rgba(157,185,235,1), rgba(138,172,231,1), rgba(126,162,228,1), rgba(123,157,225,1), rgba(122,153,224,1), rgba(121,150,222,1), rgba(121,150,222,1), rgba(121,150,222,1), rgba(122,150,223,1), rgba(122,150,223,1), rgba(122,150,223,1), rgba(122,150,224,1), rgba(123,151,224,1), rgba(123,153,225,1), rgba(123,153,225,1), rgba(125,155,227,1), rgba(125,155,227,1), rgba(127,159,230,1), rgba(127,162,230,1), rgba(128,165,231,1), rgba(129,167,232,1), rgba(130,169,233,1), rgba(130,169,233,1), rgba(129,167,232,1), rgba(128,165,231,1), rgba(126,157,229,1), rgba(122,147,223,1), rgba(122,147,223,1));
+	--frame-right: linear-gradient(270deg, rgba(91,104,205,1), rgba(116,128,220,1), rgba(117,140,221,1), rgba(117,140,220,1));
+	--frame-bottom: linear-gradient(0deg, rgba(91,104,205,1), rgba(116,128,220,1), rgba(117,140,221,1), rgba(117,140,220,1));
+	--frame-left: linear-gradient(90deg, rgba(91,104,205,1), rgba(116,128,220,1), rgba(117,140,221,1), rgba(117,140,220,1));
+	--frame-corner1: linear-gradient(90deg, rgba(91,104,205,1), rgba(118,127,216,1), rgba(120,138,221,1), rgba(118,142,219,1));
+	--frame-corner2: linear-gradient(270deg, rgba(91,104,205,1), rgba(118,127,216,1), rgba(120,138,221,1), rgba(118,142,219,1));
+	--frame-corner3: linear-gradient(45deg, rgba(91,104,205,1), rgba(109,116,205,1), rgba(117,137,222,1), rgba(117,140,221,1));
+	--frame-corner4: linear-gradient(315deg, rgba(91,104,205,1), rgba(109,116,205,1), rgba(117,137,222,1), rgba(117,140,221,1));
+	--inset-shadow: inset 0 0 2px 2px #6471D2;
+	--inset-shadow2: inset 0 0 1px 1px;
+	--button1: linear-gradient(135deg, rgba(117,151,235,1), rgba(132,159,234,1), rgba(135,161,234,1), rgba(128,155,234,1), rgba(120,150,234,1), rgba(115,146,235,1), rgba(112,143,235,1), rgba(108,140,234,1), rgba(104,137,234,1), rgba(100,135,234,1), rgba(98,133,234,1), rgba(95,132,235,1), rgba(92,131,235,1), rgba(89,130,236,1), rgba(85,128,236,1), rgba(81,126,237,1), rgba(77,124,234,1), rgba(73,119,226,1), rgba(83,123,213,1));
+	--button2: linear-gradient(135deg, rgba(178,143,168,1), rgba(179,153,181,1), rgba(180,155,185,1), rgba(179,149,178,1), rgba(178,143,170,1), rgba(178,138,165,1), rgba(177,134,162,1), rgba(176,131,158,1), rgba(176,128,155,1), rgba(176,125,151,1), rgba(175,123,148,1), rgba(175,122,146,1), rgba(175,121,143,1), rgba(175,119,140,1), rgba(175,117,137,1), rgba(175,115,133,1), rgba(173,112,128,1), rgba(166,107,124,1), rgba(154,114,135,1));
+	--foreground: rgba(255, 255, 255, 0.75);
+}
+
+body[focused="true"] platform-frame
+{
+	--frame-top: linear-gradient(180deg, rgba(0,88,238,1), rgba(63,151,255,1), rgba(43,144,255,1), rgba(3,114,255,1), rgba(3,101,241,1), rgba(0,92,233,1), rgba(0,88,230,1), rgba(0,84,227,1), rgba(0,84,227,1), rgba(0,84,227,1), rgba(0,85,229,1), rgba(0,85,229,1), rgba(0,85,229,1), rgba(0,85,229,1), rgba(0,85,229,1), rgba(0,85,234,1), rgba(0,85,234,1), rgba(0,88,238,1), rgba(0,91,242,1), rgba(0,90,245,1), rgba(0,96,249,1), rgba(1,100,249,1), rgba(2,106,254,1), rgba(2,106,254,1), rgba(2,106,254,1), rgba(2,106,254,1), rgba(0,101,253,1), rgba(0,101,253,1), rgba(0,96,252,1), rgba(0,77,227,1), rgba(0,67,207,1));
+	--frame-right: linear-gradient(270deg, rgba(0,25,207,1), rgba(7,49,216,1), rgba(22,106,238,1), rgba(8,85,221,1));
+	--frame-bottom: linear-gradient(0deg, rgba(0,25,207,1), rgba(7,49,216,1), rgba(22,106,238,1), rgba(8,85,221,1));
+	--frame-left: linear-gradient(90deg, rgba(0,25,207,1), rgba(7,49,216,1), rgba(22,106,238,1), rgba(8,85,221,1));
+	--frame-corner1: linear-gradient(90deg, rgba(0,26,207,1), rgba(0,59,224,1), rgba(0,59,224,1), rgba(0,75,224,1));
+	--frame-corner2: linear-gradient(270deg, rgba(0,26,207,1), rgba(0,59,224,1), rgba(0,59,224,1), rgba(0,75,224,1));
+	--frame-corner3: linear-gradient(45deg, rgba(0,20,153,1), rgba(0,30,160,1), rgba(13,71,218,1), rgba(22,106,238,1));
+	--frame-corner4: linear-gradient(315deg, rgba(0,20,153,1), rgba(0,30,160,1), rgba(13,71,218,1), rgba(22,106,238,1));
+	--inset-shadow: inset 0 0 2px 2px #0026D5;
+	--inset-shadow2: inset 0 0 1px 1px;
+	--button1: linear-gradient(135deg, rgba(115,154,248,1), rgba(144,175,249,1), rgba(151,180,249,1), rgba(137,170,249,1), rgba(121,159,248,1), rgba(110,151,248,1), rgba(104,146,248,1), rgba(96,140,247,1), rgba(89,135,246,1), rgba(81,129,246,1), rgba(75,125,245,1), rgba(68,120,245,1), rgba(61,115,244,1), rgba(54,110,244,1), rgba(46,104,244,1), rgba(37,98,244,1), rgba(28,91,239,1), rgba(19,79,223,1), rgba(40,86,195,1));
+	--button2: linear-gradient(135deg, rgba(235,139,115,1), rgba(239,163,144,1), rgba(240,169,151,1), rgba(238,157,137,1), rgba(236,145,121,1), rgba(233,129,104,1), rgba(233,129,104,1), rgba(232,122,96,1), rgba(232,116,89,1), rgba(231,109,81,1), rgba(229,105,75,1), rgba(228,99,68,1), rgba(227,94,61,1), rgba(226,88,54,1), rgba(225,81,46,1), rgba(224,75,37,1), rgba(219,67,28,1), rgba(204,56,19,1), rgba(181,68,40,1));
+	--foreground: rgba(255, 255, 255, 1);
+}
+
+body[maximized="false"] { margin: 30px 4px 4px 4px; }
+body[maximized="true"] { margin: 26px 0 0 0; }
+
+platform-frame div#inner { background: white; position: absolute; }
+platform-frame div#title { color: var(--foreground); font-family: Tahoma; font-size: 14.25px; font-weight: 500; filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.75)); }
+platform-frame div#minimize::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url(../../../png/platforms/Windows/XP\ Luna/glyph_minimize.png); background-repeat: no-repeat; background-position: 4px 12px; }
+platform-frame div#maximize::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-repeat: no-repeat; }
+platform-frame div#minimize:hover, platform-frame div#maximize:hover { background: var(--button1-hover); }
+platform-frame div#minimize:active, platform-frame div#maximize:active { background: var(--button1-pressed); box-shadow: var(--inset-shadow2) rgba(0, 36, 82, 0.75); }
+platform-frame div#minimize, platform-frame div#maximize { background: var(--button1); box-shadow: var(--inset-shadow2) rgba(0, 59, 190, 0.75); }
+platform-frame div#close { background: var(--button2); box-shadow: var(--inset-shadow2) rgba(174, 36, 0, 0.75); }
+platform-frame div#close:active { box-shadow: var(--inset-shadow2) rgba(100, 53, 41, 0.75); }
+platform-frame div#close::after { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url(../../../png/platforms/Windows/XP\ Luna/glyph_close.png); background-repeat: no-repeat; background-position: center; }
+platform-frame div#close:hover { background: var(--button2-hover); }
+platform-frame div#close:active { background: var(--button2-pressed); }
+platform-frame div#minimize, platform-frame div#maximize, platform-frame div#close { width: 19px; height: 19px; border: 1px solid var(--foreground); border-radius: 3px; }
+platform-frame div#minimize:hover, platform-frame div#minimize:active, platform-frame div#maximize:hover, platform-frame div#maximize:active, platform-frame div#close:hover, platform-frame div#close:active { border-color: white; }
+platform-frame div#frameNW { background: var(--frame-corner1); flex: 0 0 auto; width: 4px; height: 2px; position: absolute; top: 28px; left: 0; }
+platform-frame div#frameN { background: var(--frame-top); width: 100%; box-shadow: var(--inset-shadow); }
+platform-frame div#frameNE { background: var(--frame-corner2); flex: 0 0 auto; width: 4px; height: 2px; position: absolute; top: 28px; right: 0; }
+platform-frame div#frameW { background: var(--frame-left); flex: 0 0 auto; width: 4px; height: 100%; }
+platform-frame div#frameE { background: var(--frame-right); margin-left: auto; flex: 0 0 auto; width: 4px; height: 100%; }
+platform-frame div#frameSW { background: var(--frame-corner3); flex: 0 0 auto; width: 4px; height: 4px; }
+platform-frame div#frameS { background: var(--frame-bottom); width: 100%; }
+platform-frame div#frameSE { background: var(--frame-corner4); flex: 0 0 auto; width: 4px; height: 4px; }
+body[maximized="false"] platform-frame div#inner { top: 30px; right: 4px; bottom: 4px; left: 4px; }
+body[maximized="false"] platform-frame div#frameTop { height: 30px; border-top-left-radius: 16px; border-top-right-radius: 16px; }
+body[maximized="false"] platform-frame div#frameCenter { height: calc(100% - 34px); }
+body[maximized="false"] platform-frame div#frameBottom { height: 4px; }
+body[maximized="false"] platform-frame div#frameN { border-top-left-radius: 7px; border-top-right-radius: 7px; }
+body[maximized="false"] platform-frame div#favicon { top: 8px; left: 6px; }
+body[maximized="false"] platform-frame div#title { top: 8px; left: 26px; }
+body[maximized="false"] platform-frame div#minimize { top: 6px; right: 52px; }
+body[maximized="false"] platform-frame div#maximize { top: 6px; right: 29px; }
+body[maximized="false"] platform-frame div#maximize::after { background-image: url(../../../png/platforms/Windows/XP\ Luna/glyph_maximize.png); background-position: center; }
+body[maximized="false"] platform-frame div#close { top: 6px; right: 6px; }
+body[maximized="true"] platform-frame div#inner { top: 26px; right: 0; bottom: 0; left: 0; }
+body[maximized="true"] platform-frame div#frameTop { height: 26px; }
+body[maximized="true"] platform-frame div#frameCenter { display: none; }
+body[maximized="true"] platform-frame div#frameBottom { display: none; }
+body[maximized="true"] platform-frame div#frameNW { display: none; }
+body[maximized="true"] platform-frame div#frameNE { display: none; }
+body[maximized="true"] platform-frame div#favicon { top: 4px; left: 2px; }
+body[maximized="true"] platform-frame div#title { top: 4px; left: 22px; }
+body[maximized="true"] platform-frame div#minimize { top: 2px; right: 48px; }
+body[maximized="true"] platform-frame div#maximize { top: 2px; right: 25px; }
+body[maximized="true"] platform-frame div#maximize::after { background-image: url(../../../png/platforms/Windows/XP\ Luna/glyph_restore.png); background-position: 4px 4px; }
+body[maximized="true"] platform-frame div#close { top: 2px; right: 2px; }
