@@ -1,4 +1,5 @@
 const { remote } = require('electron');
+const docTitle = document.querySelector('title');
 
 // Set body attributes to prevent CSS breaking //
 document.body.setAttribute('maximized', remote.getCurrentWindow().isMaximized().toString());
@@ -19,7 +20,13 @@ favicon.id = 'favicon';
 
 const title = document.createElement('div');
 title.id = 'title';
-title.innerText = 'Platform-OS Demo';
+if (docTitle)
+{
+	title.innerText = docTitle.innerText;
+	docTitle.addEventListener('DOMSubtreeModified', () => title.innerText = docTitle.innerText);
+}
+else
+	title.innerText = 'document';
 
 const minimize = document.createElement('div');
 minimize.addEventListener('click', () => remote.getCurrentWindow().minimize());
