@@ -1,4 +1,4 @@
-platform-frame { --accent: #FFFFFF; }
+body { --accent: #FFFFFF; }
 
 body[maximized="false"] { margin: 30px 1px 1px 1px; }
 body[maximized="true"] { margin: 21px 0 0 0; }
