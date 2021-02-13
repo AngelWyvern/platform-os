@@ -1,0 +1,45 @@
+platform-frame { --accent: #FFFFFF; }
+
+body[maximized="false"] { margin: 30px 1px 1px 1px; }
+body[maximized="true"] { margin: 21px 0 0 0; }
+
+platform-frame div#inner { background: white; position: absolute; box-shadow: 0 1px 0 1px #19526E; }
+platform-frame div#frameTop { z-index: -1; }
+platform-frame div#frameCenter { z-index: -2; }
+platform-frame div#frameBottom { z-index: -2; }
+platform-frame div#title { color: black; font-family: 'Segoe UI'; font-size: 12px; margin: 0 auto; text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important; }
+platform-frame div#minimize { background-image: url(../../../png/platforms/Windows/10/glyph_minimize_black.png); background-repeat: no-repeat; background-position: center }
+platform-frame div#minimize:hover { background-color: #E5E5E5; }
+platform-frame div#minimize:active { background-color: #CACACB; }
+platform-frame div#maximize { background-repeat: no-repeat; background-position: center; }
+platform-frame div#maximize:hover { background-color: #E5E5E5; }
+platform-frame div#maximize:active { background-color: #CACACB; }
+platform-frame div#close { background-image: url(../../../png/platforms/Windows/10/glyph_close_black.png); background-repeat: no-repeat; background-position: center; }
+platform-frame div#close:hover { background-color: #E81123; background-image: url(../../../png/platforms/Windows/10/glyph_close_white.png); }
+platform-frame div#close:active { background-color: #F1707A; background-image: url(../../../png/platforms/Windows/10/glyph_close_white.png); }
+platform-frame div#minimize, platform-frame div#maximize, platform-frame div#close { transition: background 0.1s ease-in-out; }
+platform-frame div#minimize:active, platform-frame div#maximize:active, platform-frame div#close:active { transition: none; }
+platform-frame div#frameN { width: 100%; }
+platform-frame div#frameNW, platform-frame div#frameNE, platform-frame div#frameW, platform-frame div#frameE, platform-frame div#frameSW, platform-frame div#frameS, platform-frame div#frameSE, platform-frame div#frameCenter, platform-frame div#frameBottom { display: none; }
+body[maximized="false"] platform-frame div#inner { top: 30px; right: 1px; bottom: 1px; left: 1px; }
+body[maximized="false"] platform-frame div#frameTop { height: 30px; border-top: 1px solid #19526E; border-left: 1px solid #19526E; border-right: 1px solid #19526E; }
+body[maximized="false"] platform-frame div#frameCenter { height: calc(100% - 30px); }
+body[maximized="false"] platform-frame div#favicon { top: 7px; left: 9px; }
+body[maximized="false"] platform-frame div#title { top: 7px; left: 29px; }
+body[maximized="false"] platform-frame div#minimize { width: 45px; height: 29px; top: 1px; right: 91px; }
+body[maximized="false"] platform-frame div#maximize { width: 45px; height: 29px; top: 1px; right: 46px; background-image: url(../../../png/platforms/Windows/10/glyph_maximize_black.png); }
+body[maximized="false"] platform-frame div#close { width: 45px; height: 29px; top: 1px; right: 1px; }
+body[maximized="true"] platform-frame div#inner { top: 21px; right: 0; bottom: 0; left: 0; }
+body[maximized="true"] platform-frame div#frameTop { height: 21px; }
+body[maximized="true"] platform-frame div#favicon { top: 3px; left: 2px; }
+body[maximized="true"] platform-frame div#title { top: 3px; left: 22px; }
+body[maximized="true"] platform-frame div#minimize { width: 45px; height: 21px; top: 0; right: 94px; }
+body[maximized="true"] platform-frame div#maximize { width: 45px; height: 21px; top: 0; right: 48px; background-image: url(../../../png/platforms/Windows/10/glyph_restore_black.png); }
+body[maximized="true"] platform-frame div#close { width: 45px; height: 21px; top: 0; right: 2px; }
+body[focused="false"] platform-frame div#title { filter: opacity(0.5); }
+body[focused="false"] platform-frame div#minimize:not(:hover) { filter: opacity(0.5); }
+body[focused="false"] platform-frame div#maximize:not(:hover) { filter: opacity(0.5); }
+body[focused="false"] platform-frame div#close:not(:hover) { filter: opacity(0.5); }
+body[focused="false"] platform-frame div#frameN { background: #FFFFFF; }
+body[focused="true"] platform-frame div#frameN { background: var(--accent); }
