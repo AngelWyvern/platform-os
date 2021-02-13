@@ -1,5 +1,10 @@
 const { remote } = require('electron');
 
+// Set body attributes to prevent CSS breaking //
+document.body.setAttribute('maximized', remote.getCurrentWindow().isMaximized().toString());
+document.body.setAttribute('focused', remote.getCurrentWindow().isFocused().toString());
+// End body attributes //
+
 const frameRoot = document.createElement('platform-frame');
 
 const inner = document.createElement('div');
