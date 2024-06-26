@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AngelDTF/platform-os.git"
+    "url": "git+https://github.com/AngelWyvern/platform-os.git"
   },
   "author": "Angel Bot",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AngelDTF/platform-os/issues"
+    "url": "https://github.com/AngelWyvern/platform-os/issues"
   },
-  "homepage": "https://github.com/AngelDTF/platform-os#readme",
+  "homepage": "https://github.com/AngelWyvern/platform-os#readme",
   "devDependencies": {
     "electron": "^9.3.1"
   },
